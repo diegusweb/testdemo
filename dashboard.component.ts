@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 //espacio comentado por test
 //camio para b3
 /// cambio para b3 segundo commit
+//cambio 4 d= uevo
 
 export class DashboardComponent implements OnInit {
 
