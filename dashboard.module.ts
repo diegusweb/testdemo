@@ -10,6 +10,7 @@ import { VerifyComponent } from './verify/verify.component';
 import { InfoComponent } from './info/info.component';
 
 //este modulo cambiara
+//camio para b3
 
 @NgModule({
   imports: [

@@ -8,6 +8,8 @@ import { Router } from '@angular/router';
 })
 
 //espacio comentado por test
+//camio para b3
+
 export class DashboardComponent implements OnInit {
 
   constructor(private router: Router){}
