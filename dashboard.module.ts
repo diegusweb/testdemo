@@ -12,6 +12,7 @@ import { InfoComponent } from './info/info.component';
 //este modulo cambiara
 //camio para b3
 //cambio 4 demo
+// cambio segundo b4
 
 @NgModule({
   imports: [
