@@ -9,6 +9,8 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { VerifyComponent } from './verify/verify.component';
 import { InfoComponent } from './info/info.component';
 
+//este modulo cambiara
+
 @NgModule({
   imports: [
     FormsModule,
