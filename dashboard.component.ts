@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   templateUrl: 'dashboard.component.html'
 })
 
-
+//espacio comentado por test
 export class DashboardComponent implements OnInit {
 
   constructor(private router: Router){}
