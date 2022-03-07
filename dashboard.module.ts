@@ -14,6 +14,8 @@ import { InfoComponent } from './info/info.component';
 //cambio 4 demo
 // cambio segundo b4 el cambio se cambio
 
+//demooo
+
 @NgModule({
   imports: [
     FormsModule,
