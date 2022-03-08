@@ -12,7 +12,7 @@ import { InfoComponent } from './info/info.component';
 //este modulo cambiara
 //camio para b3
 //cambio 4 demo
-// cambio segundo b4 el cambio se cambio
+// cambio demooooooooooo b4 el cambio se cambio
 
 //demooo
 
@@ -22,6 +22,7 @@ import { InfoComponent } from './info/info.component';
     DashboardRoutingModule,
     ChartsModule,
     BsDropdownModule,
+	BsDropdownModule,
     ButtonsModule.forRoot()
   ],
   declarations: [ DashboardComponent, VerifyComponent, InfoComponent ]
