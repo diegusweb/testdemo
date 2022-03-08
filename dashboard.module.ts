@@ -19,9 +19,12 @@ import { InfoComponent } from './info/info.component';
 @NgModule({
   imports: [
     FormsModule,
+	
     DashboardRoutingModule,
     ChartsModule,
+	
     BsDropdownModule,
+	
     ButtonsModule.forRoot()
   ],
   declarations: [ DashboardComponent, VerifyComponent, InfoComponent ]
@@ -29,3 +32,6 @@ import { InfoComponent } from './info/info.component';
 export class DashboardModule { }
 
 //cambio de branch test
+
+
+//cambio de branch test feature5
