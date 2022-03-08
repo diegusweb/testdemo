@@ -12,17 +12,19 @@ import { InfoComponent } from './info/info.component';
 //este modulo cambiara
 //camio para b3
 //cambio 4 demo
-// cambio demooooooooooo b4 el cambio se cambio
+// cambio segundo b4 el cambio se cambio
 
 //demooo
 
 @NgModule({
   imports: [
     FormsModule,
+	
     DashboardRoutingModule,
     ChartsModule,
+	
     BsDropdownModule,
-	BsDropdownModule,
+	
     ButtonsModule.forRoot()
   ],
   declarations: [ DashboardComponent, VerifyComponent, InfoComponent ]
@@ -30,3 +32,6 @@ import { InfoComponent } from './info/info.component';
 export class DashboardModule { }
 
 //cambio de branch test
+
+
+//cambio de branch test feature5
