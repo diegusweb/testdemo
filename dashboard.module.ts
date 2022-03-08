@@ -13,9 +13,9 @@ import { InfoComponent } from './info/info.component';
 //camio para b3
 
 //cambio 4 demo
-// cambio segundo b4 el cambio se cambio
+// cambio segundo b4 el cambio se cambio  
 
-//demooo
+//demooo  1 original1 original
 
 @NgModule({
   imports: [
@@ -47,3 +47,5 @@ export class DashboardModule { }
 //cambio de branch test original add fature6
 //cambio de branch test original add fature6
 //cambio de branch test original add fature6
+
+//cambio de branch test original add fature 1 original
