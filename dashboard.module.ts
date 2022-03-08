@@ -14,7 +14,7 @@ import { InfoComponent } from './info/info.component';
 
 //cambio 4 demo
 // cambio segundo b4 el cambio se cambio
-
+//cambio de branch test original add fature7
 //demooo
 
 @NgModule({
@@ -24,7 +24,6 @@ import { InfoComponent } from './info/info.component';
     DashboardRoutingModule,
 	
     ChartsModule,
-	
     BsDropdownModule,
 	
     ButtonsModule.forRoot()
@@ -47,3 +46,7 @@ export class DashboardModule { }
 //cambio de branch test original add fature6
 //cambio de branch test original add fature6
 //cambio de branch test original add fature6
+
+
+//cambio de branch test original add fature7
+//cambio de branch test original add fature7
