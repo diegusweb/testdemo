@@ -21,6 +21,7 @@ import { InfoComponent } from './info/info.component';
     FormsModule,
 	
     DashboardRoutingModule,
+	
     ChartsModule,
 	
     BsDropdownModule,
@@ -33,5 +34,6 @@ export class DashboardModule { }
 
 //cambio de branch test
 
+//cambio en branch original
 
 //cambio de branch test feature5
