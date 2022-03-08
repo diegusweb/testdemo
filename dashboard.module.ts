@@ -11,6 +11,7 @@ import { InfoComponent } from './info/info.component';
 
 //este modulo cambiara
 //camio para b3
+
 //cambio 4 demo
 // cambio segundo b4 el cambio se cambio
 
@@ -28,6 +29,7 @@ import { InfoComponent } from './info/info.component';
 	
     ButtonsModule.forRoot()
   ],
+  
   declarations: [ DashboardComponent, VerifyComponent, InfoComponent ]
 })
 export class DashboardModule { }
@@ -37,3 +39,11 @@ export class DashboardModule { }
 //123445 cambio en branch original 1234567
 
 //cambio de branch test feature5
+
+//cambio de branch test original add fature6
+
+//cambio de branch test original add fature6
+//cambio de branch test original add fature6
+//cambio de branch test original add fature6
+//cambio de branch test original add fature6
+//cambio de branch test original add fature6
