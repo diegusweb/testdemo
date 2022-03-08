@@ -27,3 +27,5 @@ import { InfoComponent } from './info/info.component';
   declarations: [ DashboardComponent, VerifyComponent, InfoComponent ]
 })
 export class DashboardModule { }
+
+//cambio de branch test
