@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: conf
+  namespace: __project.artifactId__-__spring.profiles.active__
+data:
+  application-__spring.profiles.active__: |

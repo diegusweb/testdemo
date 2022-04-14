@@ -1,0 +1,10 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: dest
+  namespace: __project.artifactId__-__spring.profiles.active__
+spec:
+  host: srvc.__project.artifactId__-__spring.profiles.active__.svc.cluster.local
+  trafficPolicy:
+    loadBalancer:
+      simple: RANDOM
