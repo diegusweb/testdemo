@@ -1,0 +1,77 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deply
+  namespace: __project.artifactId__-__spring.profiles.active__
+  labels:
+    app: __project.artifactId__
+spec:
+  selector:
+    matchLabels:
+      app: __project.artifactId__
+  template:
+    metadata:
+      labels:
+        app: __project.artifactId__
+    spec:
+      imagePullSecrets:
+      - name: registry-dev-secret
+      containers:
+      - name: api
+        image: __docker.repository.url__/__docker.image.prefix__/__project.artifactId__:__project.version__-__spring.profiles.active__-__git.commit.id.abbrev__
+        imagePullPolicy: Always
+        env:
+        - name: SPRING_PROFILES_ACTIVE
+          value: __spring.profiles.active__
+        - name: SPRING_SLEUTH_PROPAGATION_KEYS
+          value: "x-request-id,x-ot-span-context"
+        - name: JAVA_OPTS
+          value: " -Xms256m -Xmx512m"
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "100m"
+          limits:
+            memory: "640Mi"
+            cpu: "500m"
+        ports:
+        - name: http
+          containerPort: 8081
+        readinessProbe:
+          httpGet:
+            path: /management/health
+            port: http
+          initialDelaySeconds: 20
+          timeoutSeconds: 10
+          periodSeconds: 20
+          successThreshold: 1
+          failureThreshold: 20
+        livenessProbe:
+          httpGet:
+            path: /management/health
+            port: http
+          initialDelaySeconds: 300
+          periodSeconds: 60
+          timeoutSeconds: 10
+          successThreshold: 1
+          failureThreshold: 3
+        volumeMounts:
+          - name: application-__spring.profiles.active__
+            mountPath: /home/jhipster/application-__spring.profiles.active__.yaml
+            subPath: application-__spring.profiles.active__.yaml
+          - name: policy-enforcer-__spring.profiles.active__
+            mountPath: /home/jhipster/policy-enforcer-__spring.profiles.active__.json
+            subPath: policy-enforcer-__spring.profiles.active__.json
+      volumes:
+        - name: application-__spring.profiles.active__
+          configMap:
+            name: conf
+            items:
+            - key: application-__spring.profiles.active__
+              path: application-__spring.profiles.active__.yaml
+        - name: policy-enforcer-__spring.profiles.active__
+          configMap:
+            name: policy-enforcer-__spring.profiles.active__
+            items:
+            - key: policy-enforcer-__spring.profiles.active__
+              path: policy-enforcer-__spring.profiles.active__.json

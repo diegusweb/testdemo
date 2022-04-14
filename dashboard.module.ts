@@ -17,6 +17,12 @@ import { InfoComponent } from './info/info.component';
 
 //demooo  1 original1 original
 
+
+//demoooo asdasdasdad
+
+##prueba de concepto stash
+
+
 @NgModule({
   imports: [
     FormsModule,
