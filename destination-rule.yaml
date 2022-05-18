@@ -8,3 +8,6 @@ spec:
   trafficPolicy:
     loadBalancer:
       simple: RANDOM
+# it can be set to any label, bra
+# it can be set to any label, bra
+# it can be set to any label, bra

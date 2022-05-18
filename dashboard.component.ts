@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
 @Component({
   templateUrl: 'dashboard.component.html'
 })
-
+# it can be set to any label, bra
 //espacio comentado por test
 //camio para b3
 /// cambio para b3 segundo commit
