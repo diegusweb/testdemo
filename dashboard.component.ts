@@ -23,7 +23,9 @@ export class DashboardComponent implements OnInit {
       this.router.navigate(['pages/user-list']);
     }else if(profile.roles.indexOf('MASTER') !== -1){
       this.router.navigate(['pages/admin-list']);
-   
+   # it can be set to any label, bra
+   # it can be set to any label, bra
+   # it can be set to any label, bra
         if(!profile.emailVerified)
           this.router.navigate(['email/verify/131qwe3434dadesam35o324sdf565jo']);
         else  
