@@ -23,10 +23,7 @@ export class DashboardComponent implements OnInit {
       this.router.navigate(['pages/user-list']);
     }else if(profile.roles.indexOf('MASTER') !== -1){
       this.router.navigate(['pages/admin-list']);
-    }else{
-      if(profile.roles.indexOf('MACHINE_OWNER') !== -1){
-        this.router.navigate(['pages/products-list']);
-      }else{
+   
         if(!profile.emailVerified)
           this.router.navigate(['email/verify/131qwe3434dadesam35o324sdf565jo']);
         else  

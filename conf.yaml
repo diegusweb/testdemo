@@ -5,3 +5,10 @@ metadata:
   namespace: __project.artifactId__-__spring.profiles.active__
 data:
   application-__spring.profiles.active__: |
+
+  application-__spring.profiles.active__: |
+
+  application-__spring.profiles.active__: |
+  application-__spring.profiles.active__: |
+
+
